@@ -1,0 +1,1 @@
+require(["backbone","routers/router","views/app"],function(e,r,t){"use strict";new r,e.history.start(),new t}),define();

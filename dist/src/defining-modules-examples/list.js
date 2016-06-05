@@ -1,0 +1,1 @@
+define([],function(){"use strict";function t(t){this.task=[],this.id=t}return t.prototype={},t.prototype.constructor=t,t});

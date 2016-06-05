@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>RequireJS Odot</title>
+  <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+  <section id="todoapp">
+    <header id="header">
+      <h1>todos</h1>
+      <input id="new-todo" placeholder="What needs to be done?" autofocus>
+    </header>
+    <section id="main">
+      <input id="toggle-all" type="checkbox">
+      <label for="toggle-all">Mark all as complete</label>
+      <ul id="todo-list"></ul>
+    </section>
+    <footer id="footer"></footer>
+  </section>
+  <footer id="info">
+    <p>Double-click to edit a todo</p>
+    <p>Written by <a href="https://github.com/tastejs/todomvc">TasteJS</a></p>
+    <p>Part of <a href="http://todomvc.com">TodoMVC</a></p>
+  </footer>
+  <script data-main="src/config" src="external/almond.js"></script>
+</body>
+</html>

@@ -1,0 +1,1 @@
+define([],function(){"use strict";function t(t){this.completed=!1,this.name=t}return t.prototype={},t.prototype.constructor=t,t});

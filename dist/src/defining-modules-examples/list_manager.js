@@ -1,0 +1,1 @@
+define(["list","exports"],function(t,e){"use strict";function n(e){return new t(e)}e.createList=n});

@@ -1,0 +1,1 @@
+define(["backbone","collections/todos","common"],function(e,t,o){"use strict";var r=e.Router.extend({routes:{"*filter":"setFilter"},setFilter:function(e){o.TodoFilter=e||"",t.trigger("filter")}});return r});

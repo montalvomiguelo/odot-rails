@@ -1,0 +1,1 @@
+beforeEach(function(){jasmine.addMatchers({toBePlaying:function(){return{compare:function(n,a){var r=n;return{pass:r.currentlyPlayingSong===a&&r.isPlaying}}}}})});

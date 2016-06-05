@@ -1,0 +1,1 @@
+define(["backbone"],function(e){"use strict";var t=e.Model.extend({defaults:{title:"",completed:!1},toggle:function(){this.save({completed:!this.get("completed")})}});return t});

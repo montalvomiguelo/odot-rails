@@ -1,0 +1,1 @@
+define(["task","exports"],function(e,t){"use strict";function n(t){return new e(t)}t.createTask=n});
