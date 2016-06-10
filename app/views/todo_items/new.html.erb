@@ -1,5 +1,5 @@
-<%= form_for [@todo_list, @todo_item] do |f| %>
-  <%= f.label :content %>
-  <%= f.text_field :content %>
-  <%= f.submit 'Save' %>
-<% end %>
+<h1>New Todo List</h1>
+
+<%= render 'form' %>
+
+<%= link_to 'Back', todo_list_todo_items_path %>
