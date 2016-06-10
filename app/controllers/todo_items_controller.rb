@@ -1,6 +1,7 @@
 class TodoItemsController < ApplicationController
-  before_action :set_todo_list, only: [:index, :new, :create, :edit, :update]
-  before_action :set_todo_item, only: [:edit, :update]
+  # Before filter
+  before_action :set_todo_list, only: [:index, :new, :create, :edit, :update, :destroy]
+  before_action :set_todo_item, only: [:edit, :update, :destroy]
 
   # GET /todo_lists/:todo_list_id/todo_items
   def index
@@ -32,6 +33,12 @@ class TodoItemsController < ApplicationController
     else
       render :new
     end
+  end
+
+  # DELETE /todo_lists/:todo_list_id/todo_items/:id
+  def destroy
+    @todo_item.destroy
+    redirect_to todo_list_todo_items_url, notice: 'Todo list was successfully destroyed.'
   end
 
   private
