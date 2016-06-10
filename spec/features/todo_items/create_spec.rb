@@ -14,7 +14,7 @@ describe "Adding todo items" do
   it "is successful with valid content" do
     create_todo_item(content: "Milk")
     expect(page).to have_content("Todo item was successfully created.")
-    within("ul.todo_items") do
+    within(".todo_items") do
       expect(page).to have_content("Milk")
     end
   end
