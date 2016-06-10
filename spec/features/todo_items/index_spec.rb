@@ -32,4 +32,11 @@ describe "Viewing todo items" do
       expect(page).to have_content("dos")
     end
   end
+
+  it "can go back to listing todo lists page" do
+    visit_todolist(todo_list)
+    click_link "Back"
+    expect(page).to have_content("Listing Todo Lists")
+  end
+
 end
