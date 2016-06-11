@@ -1,7 +1,7 @@
 class TodoItemsController < ApplicationController
   # Before filter
-  before_action :set_todo_list, only: [:index, :new, :create, :edit, :update, :destroy]
-  before_action :set_todo_item, only: [:edit, :update, :destroy]
+  before_action :set_todo_list, only: [:index, :new, :create, :edit, :update, :destroy, :complete]
+  before_action :set_todo_item, only: [:edit, :update, :destroy, :complete]
 
   # GET /todo_lists/:todo_list_id/todo_items
   def index
@@ -39,6 +39,12 @@ class TodoItemsController < ApplicationController
   def destroy
     @todo_item.destroy
     redirect_to todo_list_todo_items_url, notice: 'Todo list was successfully destroyed.'
+  end
+
+  # PATCH /todo_lists/:todo_list_id/todo_items/:id/complete
+  def complete
+    @todo_item.update_attribute(:completed_at, Time.now)
+    redirect_to todo_list_todo_items_url, notice: 'Todo list was successfully completed.'
   end
 
   private
