@@ -6,7 +6,7 @@ class TodoList < ActiveRecord::Base
 
   has_many :todo_items
 
-  def has_completed_items?
+  def has_complete_items?
     todo_items.complete.size > 0
   end
 

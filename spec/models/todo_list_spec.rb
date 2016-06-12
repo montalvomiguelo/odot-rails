@@ -8,12 +8,12 @@ RSpec.describe TodoList, :type => :model do
 
     it "returns true with completed todo items" do
       todo_list.todo_items.create(content: "Eggs", completed_at: 1.minute.ago)
-      expect(todo_list.has_completed_items?).to be_truthy
+      expect(todo_list.has_complete_items?).to be_truthy
     end
 
     it "returns false with no completed todo items" do
       todo_list.todo_items.create(content: "Eggs")
-      expect(todo_list.has_completed_items?).to be_falsy
+      expect(todo_list.has_complete_items?).to be_falsy
     end
   end
 
