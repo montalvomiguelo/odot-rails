@@ -5,4 +5,7 @@ class TodoItem < ActiveRecord::Base
   def completed?
     !completed_at.nil?
   end
+
+  scope :complete, -> { where("completed_at is not null") }
+  scope :incomplete, -> { where(completed_at: nil) }
 end
