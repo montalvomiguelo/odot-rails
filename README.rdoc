@@ -1,28 +1,19 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Ruby on Rails 4! IN this project we developed a simple todo list application called ODOT. (create todo lists, add items to our lists, edit, mark them complete)
 
-Things you may want to cover:
+Things I learnt:
 
-* Ruby version
+* Ruby
 
-* System dependencies
+* Ruby on Rails
 
-* Configuration
+* Associations
 
-* Database creation
+* Validations
 
-* Database initialization
+* TDD
 
-* How to run the test suite
+* rspec
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+* Capybara
